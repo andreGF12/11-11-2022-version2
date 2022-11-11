@@ -13,21 +13,44 @@
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.bunny.net/css?family=Nunito" rel="stylesheet">
 
+    
+
     <!-- Scripts -->
     @vite(['resources/sass/app.scss', 'resources/js/app.js'])
 </head>
 <body>
-    <div id="app">
-        <nav class="navbar navbar-expand-md navbar-light bg-white shadow-sm">
-            <div class="container">
+    <style>
+        body{
+
+            background:lightblue;
+            
+        }
+        
+    </style>
+    <div class="divi" id="app" >
+        <style>
+            .divi{
+                background:lightyellow;
+            }
+        </style>
+        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm">
+            
+            <div class="container" >
+                <style>
+                    .container{
+                        background:lightgreen;
+                    }
+                </style>
                 <a class="navbar-brand" href="{{ url('/') }}">
+                <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-codificador-vidrios-icono-s%C3%ADmbolo-del-programador-84895216.jpg" alt="" width="80" height="80">
                     {{ config('app.name', 'Laravel') }}
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="levivi" id="navbarSupportedContent" >
+                    
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
 
@@ -39,12 +62,15 @@
                         @guest
                             @if (Route::has('login'))
                                 <li class="nav-item">
+                                    <img src="https://i.pinimg.com/474x/d7/52/45/d75245ef083eb6d380f4e37dd62994cb.jpg" alt="" width="80" height="80">
                                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                    
                                 </li>
                             @endif
 
                             @if (Route::has('register'))
                                 <li class="nav-item">
+                                <img src="https://static.vecteezy.com/system/resources/thumbnails/005/877/701/small/mobile-banking-modern-flat-concept-for-web-banner-design-woman-enters-login-and-password-for-secure-access-to-personal-financial-account-in-application-illustration-with-isolated-people-scene-free-vector.jpg" alt="" width="80" height="80">
                                     <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
                                 </li>
                             @endif
