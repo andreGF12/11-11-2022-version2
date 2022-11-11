@@ -25,22 +25,21 @@
             background:lightblue;
             
         }
+        .card{
+            box-shadow: 13px 11px 12px green;
+        }
         
     </style>
     <div class="divi" id="app" >
         <style>
             .divi{
-                background:lightyellow;
+                background:lightgreen;
             }
         </style>
-        <nav class="navbar navbar-expand-md navbar-light bg-black shadow-sm">
+        <nav class="navbar navbar-expand-md navbar-light bg-red shadow-sm">
             
             <div class="container" >
-                <style>
-                    .container{
-                        background:lightgreen;
-                    }
-                </style>
+                
                 <a class="navbar-brand" href="{{ url('/') }}">
                 <img src="https://thumbs.dreamstime.com/b/icono-de-la-muestra-del-codificador-vidrios-icono-s%C3%ADmbolo-del-programador-84895216.jpg" alt="" width="80" height="80">
                     {{ config('app.name', 'Laravel') }}
